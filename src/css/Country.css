@@ -1,0 +1,15 @@
+.country-header {
+    padding: 20px;
+    background-color: white;
+}
+
+.country-header .country-flag {
+    width: 25px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.country-header .country-title {
+    font-size: 24px;
+    color: #646464;
+}

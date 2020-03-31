@@ -1,0 +1,47 @@
+.card {
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card.cases {
+    background: rgb(30, 111, 242);
+    background: linear-gradient(90deg, rgba(30, 111, 242, 1) 0%, rgba(80, 144, 250, 1) 93%);
+}
+
+.card.deaths {
+    background: rgb(237, 7, 35);
+    background: linear-gradient(90deg, rgba(237, 7, 35, 1) 0%, rgba(241, 75, 95, 1) 93%);
+}
+
+.card.recovered {
+    background: rgb(56, 239, 125);
+    background: linear-gradient(90deg, rgba(0, 221, 83, 1) 0%, rgba(56, 239, 125, 1)93%);
+}
+
+.card.todayCases {
+    background: rgb(30, 111, 242);
+    background: linear-gradient(90deg, rgba(30, 111, 242, 1) 0%, rgba(80, 144, 250, 1) 93%);
+}
+
+.card.todayDeaths {
+    background: rgb(237, 7, 35);
+    background: linear-gradient(90deg, rgba(237, 7, 35, 1) 0%, rgba(241, 75, 95, 1) 93%);
+}
+
+.card.critical {
+    background: rgb(56, 239, 125);
+    background: linear-gradient(90deg, rgba(0, 221, 83, 1) 0%, rgba(56, 239, 125, 1)93%);
+}
+
+.card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card .figure {
+    font-size: 48px;
+}

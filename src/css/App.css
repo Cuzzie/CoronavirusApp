@@ -1,0 +1,39 @@
+* {
+    font-family: "Fira Sans";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    width: 80%;
+    margin: auto;
+    color: #646464;
+}
+
+.main-title {
+    font-size: 40px;
+    font-family: "Lato";
+    background-color: white;
+    color: #040404;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 90%;
+    }
+    .main-title {
+        font-size: 32px;
+    }
+}

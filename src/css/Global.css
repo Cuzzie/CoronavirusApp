@@ -1,0 +1,19 @@
+.cards {
+    padding: 0 20px;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
