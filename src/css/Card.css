@@ -13,28 +13,36 @@
 }
 
 .card.deaths {
-    background: rgb(237, 7, 35);
-    background: linear-gradient(90deg, rgba(237, 7, 35, 1) 0%, rgba(241, 75, 95, 1) 93%);
+    background: #e52d27;
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+    background: linear-gradient(to right, #b31217, #e52d27);
 }
 
 .card.recovered {
-    background: rgb(56, 239, 125);
-    background: linear-gradient(90deg, rgba(0, 221, 83, 1) 0%, rgba(56, 239, 125, 1)93%);
+    background: #00b09b;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96c93d, #00b09b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .card.todayCases {
-    background: rgb(30, 111, 242);
-    background: linear-gradient(90deg, rgba(30, 111, 242, 1) 0%, rgba(80, 144, 250, 1) 93%);
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711);
 }
 
 .card.todayDeaths {
-    background: rgb(237, 7, 35);
-    background: linear-gradient(90deg, rgba(237, 7, 35, 1) 0%, rgba(241, 75, 95, 1) 93%);
+    background: #c31432;
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432);
 }
 
 .card.critical {
-    background: rgb(56, 239, 125);
-    background: linear-gradient(90deg, rgba(0, 221, 83, 1) 0%, rgba(56, 239, 125, 1)93%);
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
 }
 
 .card .card-title {

@@ -8,7 +8,7 @@ export const SinglePage = () => {
 
 	return (
 		<div className="section">
-			<div className="title">Coronavirus Pandemic Statistics</div>
+			<div className="title">Country Statistics</div>
 			<Country country={country} />
 		</div>
 	)

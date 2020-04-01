@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ReactLoading from "react-loading"
+import FadeIn from "react-fade-in"
 import { fetchCountry } from "../util/util"
 import Card from "../components/Card"
 import "../css/Country.css"
@@ -17,10 +18,9 @@ const Country = ({ country }) => {
     }, [country])
 
     return (
-        <>
+        <FadeIn>
             {loading ? (
-                <ReactLoading style={{ margin: "auto" }} type="bars" color="#646464" />
-
+                <ReactLoading className="loading" type="bars" color="#646464" />
             ) : (
                     <>
                         <div className="country-header">
@@ -28,16 +28,18 @@ const Country = ({ country }) => {
                             <span className="country-title">{country}</span>
                         </div>
                         <div className="cards">
-                            <Card data={data.cases} type="cases" title="Total cases" />
-                            <Card data={data.deaths} type="deaths" title="Total deaths" />
-                            <Card data={data.recovered} type="recovered" title="Total recovered" />
-                            <Card data={data.todayCases} type="todayCases" title="Cases today" />
-                            <Card data={data.todayDeaths} type="todayDeaths" title="Deaths today" />
-                            <Card data={data.critical} type="critical" title="Total critical" />
+                            <>
+                                <Card data={data.cases} type="cases" title="Total cases" />
+                                <Card data={data.deaths} type="deaths" title="Total deaths" />
+                                <Card data={data.recovered} type="recovered" title="Total recovered" />
+                                <Card data={data.todayCases} type="todayCases" title="Cases today" />
+                                <Card data={data.todayDeaths} type="todayDeaths" title="Deaths today" />
+                                <Card data={data.critical} type="critical" title="Total critical" />
+                            </>
                         </div>
                     </>
                 )}
-        </>
+        </FadeIn>
     )
 }
 
