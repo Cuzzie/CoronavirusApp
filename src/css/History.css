@@ -1,0 +1,10 @@
+.chart-container {
+    background-color: white;
+    padding: 20px;
+    overflow-y: hidden;
+}
+
+.canvas-container {
+    height: 60vh;
+    width: 200vw;
+}
