@@ -71,3 +71,11 @@ a:hover {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+.today-cases {
+    color: #6A76AB;
+}
+
+.today-deaths {
+    color: #DC5950;
+}

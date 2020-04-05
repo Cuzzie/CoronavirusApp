@@ -28,15 +28,19 @@ export const Countries = () => {
                                 <tr>
                                     <th>Country</th>
                                     <th>Cases</th>
+                                    <th>New Cases</th>
                                     <th>Deaths</th>
+                                    <th>New Deaths</th>
                                     <th>Recovered</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {countryData.sort((countryA, countryB) => countryB.cases - countryA.cases)
-                                    .map(({ country, countryInfo, cases, deaths, recovered }, idx) => {
+                                    .map(({ country, countryInfo, cases, todayCases, deaths, todayDeaths, recovered, critical }, idx) => {
                                         const formattedCases = cases ? cases.toLocaleString() : ""
+                                        const formattedTodayCases = todayCases ? todayCases.toLocaleString() : ""
                                         const formattedDeaths = deaths ? deaths.toLocaleString() : ""
+                                        const formattedTodayDeaths = todayDeaths ? todayDeaths.toLocaleString() : ""
                                         const formattedRecovered = recovered ? recovered.toLocaleString() : ""
                                         return (
                                             <tr key={idx}>
@@ -45,7 +49,9 @@ export const Countries = () => {
                                                     <Link to={`/${country}`}>{country}</Link>
                                                 </td>
                                                 <td>{formattedCases}</td>
+                                                <td className="today-cases">{formattedTodayCases}</td>
                                                 <td>{formattedDeaths}</td>
+                                                <td className="today-deaths">{formattedTodayDeaths}</td>
                                                 <td>{formattedRecovered}</td>
                                             </tr>
                                         )
