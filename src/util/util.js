@@ -23,9 +23,12 @@ export const fetchCountry = async (country) => {
 	// return countriesData.find(data => data.country.toUpperCase() === country.toUpperCase())
 }
 
-export const fetchCountryHistory = async (country, type) => {
+export const fetchCountryHistory = async (country) => {
 	const data = await covid.historical(null, country)
-	return prepareHistoryData(data.timeline[type])
+	const cases = prepareHistoryData(data.timeline.cases)
+	const deaths = prepareHistoryData(data.timeline.deaths)
+	const result = { cases, deaths }
+	return result
 	// return countryHistData.find(elem => elem.country.toUpperCase() === country.toUpperCase()).timeline.cases
 }
 

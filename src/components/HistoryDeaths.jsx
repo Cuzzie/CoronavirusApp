@@ -2,17 +2,17 @@ import React from 'react'
 import { Line } from 'react-chartjs-2'
 import "../css/History.css"
 
-export const HistoryCases = ({ country, data }) => {
+export const HistoryDeaths = ({ country, data }) => {
     const prepareChartData = ({ labels, values }) => {
         // Prepare data for Chart.js
         const chartData = ({
             labels,
             datasets: [
                 {
-                    label: "No. of Cases",
+                    label: "No. of Deaths",
                     data: values,
-                    backgroundColor: 'rgba(14,99,105,0.2)',
-                    pointBackgroundColor: 'rgba(23,163,173,0.7)'
+                    backgroundColor: 'rgb(114,61,70,0.4)',
+                    pointBackgroundColor: 'rgb(114,61,70,0.7)'
                 }
             ]
         })
@@ -27,7 +27,7 @@ export const HistoryCases = ({ country, data }) => {
                     options={{
                         title: {
                             display: true,
-                            text: `Coronavirus cases in ${country}`,
+                            text: `Coronavirus deaths in ${country}`,
                             fontSize: 25,
                             position: "left"
                         },
@@ -38,4 +38,4 @@ export const HistoryCases = ({ country, data }) => {
     )
 }
 
-export default HistoryCases
+export default HistoryDeaths
