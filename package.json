@@ -9,7 +9,7 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "date-fns": "^2.12.0",
-    "novelcovid": "^1.2.6",
+    "novelcovid": "^1.2.7",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
