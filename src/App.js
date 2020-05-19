@@ -5,17 +5,17 @@ import { SinglePage } from "./pages/SinglePage"
 import "./css/App.css"
 
 function App() {
-	return (
-		<Router>
-			<div className="main-title">Cuzzie's Coronavirus App</div>
-			<div>
-				<Switch>
-					<Route exact path="/" component={MainPage} />
-					<Route path="/:country" component={SinglePage} />
-				</Switch>
-			</div>
-		</Router>
-	)
+  return (
+    <Router basename={"/CovidStats/"}>
+      <div className="main-title">Cuzzie's Coronavirus App</div>
+      <div>
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route path="/:country" component={SinglePage} />
+        </Switch>
+      </div>
+    </Router>
+  )
 }
 
 export default App
